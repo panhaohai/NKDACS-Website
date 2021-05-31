@@ -1,12 +1,14 @@
-这篇文章暂用于测试Markdown及$\LaTeX$是否正常运作，也可用于简单学习一些特殊的Markdown命令(请查看Github上的源文件来看代码)
+# md-tutorial
 
-基本的Markdown命令可在网上搜索优秀的学习资源进行学习，本网站还支持了一些特殊的命令，基于Material for MkDocs[^1]。更多的具体情况请查看 [此链接](https://squidfunk.github.io/mkdocs-material/extensions/admonition/)
+这篇文章暂用于测试Markdown及$\LaTeX$是否正常运作，也可用于简单学习一些特殊的Markdown命令\(请查看Github上的源文件来看代码\)
 
-也可以参考我们做的一个[幻灯片](./files/md-tutor.html)
+基本的Markdown命令可在网上搜索优秀的学习资源进行学习，本网站还支持了一些特殊的命令，基于Material for MkDocs。更多的具体情况请查看 [此链接](https://squidfunk.github.io/mkdocs-material/extensions/admonition/)
+
+也可以参考我们做的一个[幻灯片](https://github.com/panhaohai/NKDACS-Website/tree/ebc9ff12d8db8c2cb373420bde2b11c35b4fbf6b/docs/tutorial/files/md-tutor.html)
 
 ## 代码测试
 
-``` Python
+```python
 import numpy as np
 x = np.array([1,2,3])
 y = np.array([4,5,6])
@@ -22,15 +24,15 @@ $$
 \frac{n!}{k!(n-k)!} = \binom{n}{k}
 $$
 
-行内公式：$p(x|y) = \frac{p(y|x)p(x)}{p(y)}$
+行内公式：$p\(x\|y\) = \frac{p\(y\|x\)p\(x\)}{p\(y\)}$
 
 ## 文字增删及高亮测试
 
-有时为了更准确地将文本的变动记录下来，增删的过程都要体现出来， {--删除的文字--} 会被加上删除线同时配上红色的底色， {++增加的文字++}会被加上下划线同时配上绿色的底色. 就像这样： NKDACS是南开大学{~~统计研究院~>统计与数据科学学院~~}成立的一个科研组织。
+有时为了更准确地将文本的变动记录下来，增删的过程都要体现出来， {--删除的文字--} 会被加上删除线同时配上红色的底色， {++增加的文字++}会被加上下划线同时配上绿色的底色. 就像这样： NKDACS是南开大学{~~统计研究院~&gt;统计与数据科学学院~~}成立的一个科研组织。
 
 此外，还可以对文字进行{==高亮==} 操作。
 
-甚至还可以以作者身份加一条评论对某个部分进行点评{>>我觉得这样挺棒的！<<}.
+甚至还可以以作者身份加一条评论对某个部分进行点评{&gt;&gt;我觉得这样挺棒的！&lt;&lt;}.
 
 ## Emoji
 
@@ -44,15 +46,15 @@ $$
 * [x] 教程制作
 * [x] 讨论班
 * [ ] 网站制作
-    * [x] 基本设计
-    * [x] 样式设计
-    * [ ] 服务器维护
-    * [ ] 正式发布
+  * [x] 基本设计
+  * [x] 样式设计
+  * [ ] 服务器维护
+  * [ ] 正式发布
 * [ ] NKDACS正式展开活动
 
 它的Markdown代码很简单，只用像下面这样写就可以了：
 
-``` markdown
+```text
 * [x] 学术分享
 * [x] 教程制作
 * [x] 讨论班
@@ -68,17 +70,17 @@ $$
 
 网站支持通过特殊Markdown代码来设计如下的Note样式
 
+!!! note "这是一个小Note" 可以在这个可爱的小Note中记录一些要点，这样的样式更能吸引读者的眼球，从而将你想要表达的重点凸显出来。 Note中依然可以正常使用各种形式的Markdown。无论是数学格式还是代码格式，都能正常地包含在Note中。
+
+```text
+设计这种note很简单，它的Markdown代码如下：
+
+``` markdown
 !!! note "这是一个小Note"
-    可以在这个可爱的小Note中记录一些要点，这样的样式更能吸引读者的眼球，从而将你想要表达的重点凸显出来。
-    Note中依然可以正常使用各种形式的Markdown。无论是数学格式还是代码格式，都能正常地包含在Note中。
-
-    设计这种note很简单，它的Markdown代码如下：
-
-    ``` markdown
-    !!! note "这是一个小Note"
-            可以在这个可爱的小Note中记录一些要点，这样的样式更能吸引读者的眼球，从而将你想要表达的重点凸显出来。
-            Note中依然可以正常使用各种形式的Markdown。无论是数学格式还是代码格式，都能正常地包含在Note中。
-    ```
+        可以在这个可爱的小Note中记录一些要点，这样的样式更能吸引读者的眼球，从而将你想要表达的重点凸显出来。
+        Note中依然可以正常使用各种形式的Markdown。无论是数学格式还是代码格式，都能正常地包含在Note中。
+```
+```
 
 ### 折叠显示
 
@@ -86,13 +88,17 @@ $$
 
 ??? note "NKDACS是由学生与老师共同参与的项目组织吗？"
 
-    是的，NKDACS有强大的教授团体对项目组的学生进行学术指导。
+```text
+是的，NKDACS有强大的教授团体对项目组的学生进行学术指导。
+```
 
 默认是收起来的，当然，改为默认展开也是可以的
 
 ???+ note "NKDACS是由学生与老师共同参与的项目组织吗？"
 
-    是的，NKDACS有强大的教授团体对项目组的学生进行学术指导。
+```text
+是的，NKDACS有强大的教授团体对项目组的学生进行学术指导。
+```
 
 ## 其他测试
 
@@ -104,14 +110,14 @@ $$
 
 ### 表格测试
 
-First Header | Second Header | Third Header
-:----------- |:-------------:| -----------:
-居左         | 居中        | 居右
-居左         | 居中        | 居右
-居左         | 居中        | 居右
-居左         | 居中        | 居右
-居左         | 居中        | 居右
-居左         | 居中        | 居右
+| First Header | Second Header | Third Header |
+| :--- | :---: | ---: |
+| 居左 | 居中 | 居右 |
+| 居左 | 居中 | 居右 |
+| 居左 | 居中 | 居右 |
+| 居左 | 居中 | 居右 |
+| 居左 | 居中 | 居右 |
+| 居左 | 居中 | 居右 |
 
 ## 注脚测试
 
@@ -119,6 +125,5 @@ First Header | Second Header | Third Header
 
 下面展示注脚效果：
 
-本网站基于MkDocs[^1]系统，采用了Material for MkDocs[^2]主题样式，感谢开源社区的贡献！
-[^1]: [https://www.mkdocs.org/](https://www.mkdocs.org/)
-[^2]: [https://squidfunk.github.io/mkdocs-material/](https://squidfunk.github.io/mkdocs-material/)
+本网站基于MkDocs系统，采用了Material for MkDocs主题样式，感谢开源社区的贡献！
+

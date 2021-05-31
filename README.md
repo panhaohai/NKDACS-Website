@@ -31,14 +31,14 @@ NKDACS-Website的全部内容均已开源，欢迎各位向本Repo贡献代码�
 
 1. 在终端界面逐步运行如下命令（需要安装 python, git 等）
 
-```
+```text
 git clone https://github.com/NKDACS/NKDACS-Website/
 cd NKDACS-Website/
 pip install -r requirements.txt
 mkdocs serve
 ```
 
-2. 本地浏览器访问 http://127.0.0.1:8000/ ，查看网站效果。
+1. 本地浏览器访问 [http://127.0.0.1:8000/](http://127.0.0.1:8000/) ，查看网站效果。
 
 ## 如何指出NKDACS-Website上的错误，以及如何在这个平台上分享知识？
 
@@ -56,4 +56,5 @@ mkdocs serve
 
 如果想要向我们投稿，请进入Github页面内的[docs](https://github.com/NKDACS/NKDACS-Website/tree/master/docs)文件夹，选择一个你想投稿的目录对应的文件夹，进入文件夹后，点击右上角的"Create new file"，随后便能开始撰写你的内容，最后同上面的操作步骤一样，发起Pull Request后，将由我们决定是否采用。
 
-**注意：请务必在文章中署名，若您是授权将您个人网站中的文章转载在本站，也请一并在文中附上原文地址。当您发起投稿后，将意味着同意本站所使用的"[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)"知识共享协议，投稿前请先阅读协议条款，确定您是否接受这一协议。同时，您随时可以向我们申请撤销刊登文章的授权，只需要在Repo中申请删除对应文件的Pull Request即可。**
+**注意：请务必在文章中署名，若您是授权将您个人网站中的文章转载在本站，也请一并在文中附上原文地址。当您发起投稿后，将意味着同意本站所使用的"**[**CC BY-NC-ND 4.0**](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)**"知识共享协议，投稿前请先阅读协议条款，确定您是否接受这一协议。同时，您随时可以向我们申请撤销刊登文章的授权，只需要在Repo中申请删除对应文件的Pull Request即可。**
+

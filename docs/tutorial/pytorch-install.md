@@ -1,3 +1,5 @@
+# pytorch-install
+
 本页面目前仅用于测试网站结构是否正常，页面内的内容并不是完整的Pytorch安装教程，请暂时自行搜索其他的Pytorch教程。
 
 ## 确认电脑设备情况
@@ -15,4 +17,5 @@
 
 根据如下图所示的提升，点选相关信息后，按给出的命令进行安装
 
-![Pytorch](/img/tutorial/pytorch-install/pytorch.png)
+![Pytorch](https://github.com/panhaohai/NKDACS-Website/tree/ebc9ff12d8db8c2cb373420bde2b11c35b4fbf6b/img/tutorial/pytorch-install/pytorch.png)
+
